@@ -1,4 +1,4 @@
-from telethon import Button,events
+from telethon import Button, events
 
 from . import TOSH, K, R
 

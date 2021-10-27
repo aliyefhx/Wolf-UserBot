@@ -109,7 +109,7 @@ async def _(event):
 
 @bot.on(admin_cmd(outgoing=True, pattern="معرف (.*)"))
 async def update_username(username):
-    """ امر - معرف - لتغير معرف حسابك """
+    """امر - معرف - لتغير معرف حسابك"""
     newusername = username.pattern_match.group(1)
     try:
         await username.client(UpdateUsernameRequest(newusername))
@@ -120,7 +120,7 @@ async def update_username(username):
 
 @bot.on(admin_cmd(outgoing=True, pattern="الحساب$"))
 async def count(event):
-    """ هذا امر الحساب - لعرض معلومات الحساب """
+    """هذا امر الحساب - لعرض معلومات الحساب"""
     u = 0
     g = 0
     c = 0
@@ -160,7 +160,7 @@ async def count(event):
 
 @bot.on(admin_cmd(outgoing=True, pattern=r"حذف صوره"))
 async def remove_profilepic(delpfp):
-    """ امر حذف الصور - لحذ صوره واحد من حسابك او جميعها """
+    """امر حذف الصور - لحذ صوره واحد من حسابك او جميعها"""
     group = delpfp.text[8:]
     if group == "جميعها":
         lim = 0
@@ -185,7 +185,7 @@ async def remove_profilepic(delpfp):
 
 @bot.on(admin_cmd(outgoing=True, pattern=r"مسح"))
 async def remove_profilepic(delpfp):
-    """ امر حذف الصور - لحذ صوره واحد من حسابك او جميعها """
+    """امر حذف الصور - لحذ صوره واحد من حسابك او جميعها"""
     group = delpfp.text[8:]
     if group == "الصور":
         lim = 0

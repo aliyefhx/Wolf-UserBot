@@ -2,16 +2,15 @@ import math
 import os
 import re
 import time
+from platform import python_version
 
 import heroku3
 import lottie
 import requests
 import spamwatch as spam_watch
-from validators.url import url
-import time
-from platform import python_version
-
 from telethon import version
+from validators.url import url
+
 from .. import *
 from ..Config import Config
 from ..helpers import *
